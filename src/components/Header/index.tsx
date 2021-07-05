@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.content}>
-        <Image src='/logo.svg' alt="DevNews" width={'2rem'} height={'3.5rem'} />
+        <Image src='/logo.svg' alt="DevNews" width={'2rem'} height={'1rem'} />
         <nav>
           <ActiveLink href="/" activeClassName={styles.active}>
             <a>Home</a>
