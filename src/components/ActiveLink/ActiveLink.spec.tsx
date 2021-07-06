@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 import { ActiveLink } from '.';
 
 jest.mock('next/router', () => {
@@ -27,7 +28,7 @@ describe('ActiveLink component', () => {
   test('adds active class if the link as currently active', () => {
 
 
-    const { getByText } = render(
+   const { getByText } = render(
       <ActiveLink href="/" activeClassName="active">
         <a>Home</a>
       </ActiveLink>
